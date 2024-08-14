@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{news.title}}</title>
+  <style>
+body {
+    /* background-color: black; */
+    font-family: TimesNewRoman;
+    font-size: 20px;
+    color:  black;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<b>
+
+
+ <center> <h1>{{ news.title }}</h1></center><br>
+  <h3>{{ news.category }}</h3>
+     <center> <a href="{{ news.image.url }}"><img src="{{ news.image.url }}" alt="{{news.title}}" ></a></center>
+  <h2>{{ news.body }}</h2>
+  <h4>{{ news.created_at }}</h4>
+</b>
+
+</body>
+</html>

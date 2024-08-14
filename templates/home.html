@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+    <style>
+        body {
+    font-family: TimesNewRoman;
+    font-size: 20px;}
+
+
+</style>
+
+</head>
+<body>
+
+<table>
+
+<header>
+    <center><h1>NEWS</h1></center>
+</header>
+
+
+{% for news in newslist %}
+
+   <h1>
+     <p>
+         <a href="{% url 'news_detail' news.id %}">{{ news.title }} </a><br>
+<!--         <img src="{{ news.image.url }}" alt="{{news.title}}" >-->
+       <hr>
+     </p>
+   </h1>
+{% endfor %}
+
+
+  <dialog open><h4>Bu saytning maqsadi: Bu sayt eng so'ngi Xorijiy, Mahalliy, Football, Sport va Fan-Texnika haqidagi ma'lumotlarni yetkazib beradi </h4></dialog>
+
+
+
+<footer>
+  <p>Copyright © 2024  || News</p>
+  <p>Contact us: <a href="https://987654321">987654321</a></p>
+</footer>
+    
+
+
+
+</table>
+</body>
+</html>
